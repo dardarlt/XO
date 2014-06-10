@@ -27,5 +27,5 @@ $app['game.controller'] = $app->share(function() use ($app, $gameService, $regis
 
 $app->get('/', "game.controller:indexAction");
 $app->get('/turn.json', "game.controller:indexJsonAction");
-
+$app['debug'] = true;
 $app->run();
