@@ -20,8 +20,8 @@ class AttackStrategy extends AbstractStrategy
     {
         $specialMoves = new SpecialMoveFinder($this->situation);
 
-        $specialMoves->add(new PandoraAttack($this->situation), 80);
-        $specialMoves->add(new CrossAttack($this->situation), 80);
+        $specialMoves->add(new PandoraAttack($this->situation), 40);
+        $specialMoves->add(new CrossAttack($this->situation), 40);
         $specialMoves->add(new CenterMove($this->situation));
         $specialMoves->add(new EdgeAttack($this->situation));
         $specialMoves->add(new CornerAttack($this->situation));
